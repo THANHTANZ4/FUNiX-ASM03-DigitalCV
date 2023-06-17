@@ -1,0 +1,302 @@
+/* BANNER */
+#banner {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: inherit;
+  height: 300px; /* Điều chỉnh chiều cao của banner theo ý muốn */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+#banner h1 {
+  font-weight: 300;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#banner span {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+/* NAV-BAR */
+#nav-bar {
+  text-align: center;
+}
+
+#nav-bar .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+#nav-bar .container div {
+  display: flex;
+  align-items: center;
+}
+
+#nav-bar .container a {
+  color: #333;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+.item {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.item-border {
+  border-left: #f7f7f7 1.3px solid;
+  z-index: 500;
+  border-right: #f7f7f7 1.3px solid;
+}
+.item-link {
+  z-index: 500;
+}
+
+.item-border:last-child {
+  border-right: #f7f7f7 1.3px solid;
+}
+
+.nav-ic {
+  color: #2a97eb;
+}
+
+/* ABOUT */
+#about .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#target,
+#personal-info {
+  width: 100%;
+}
+
+#about h1 {
+  padding: 20px 0;
+}
+
+#target,
+#personal-info {
+  padding: 50px 30px;
+}
+
+#target p {
+  line-height: 1.4;
+}
+
+#personal-info {
+  background-color: #e1e1e1;
+}
+
+#personal-info ul {
+  line-height: 1.5;
+}
+/* Ẩn thông tin cá nhân đến khi người dùng submit email */
+#info {
+  display: none;
+}
+
+/* JOB-INFO */
+#job-info .container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 1.3fr 1fr;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+#job-info li {
+  line-height: 1.5;
+  padding: 0 30px 30px 25px;
+}
+
+.cell {
+  border: #f7f7f7 1.3px solid;
+  width: 100%;
+}
+
+.text {
+  margin-left: 25px;
+}
+
+.sub-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.sub-title i {
+  font-size: 30px;
+}
+
+.iclike {
+  width: 100%;
+  padding: 10px 25px;
+}
+
+.iclike .like td {
+  font-size: 10px;
+  text-align: center;
+}
+
+.iclike .ic i {
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #2a97eb;
+  border-radius: 50%;
+  padding-top: 8px;
+  color: #2a97eb;
+}
+
+.color-ic {
+  color: #e1e1e1;
+}
+
+.exp-language,
+.exp-skill {
+  line-height: 1.8;
+}
+#hobby table i {
+  padding-left: 7px;
+  font-weight: 500;
+}
+.container-btn {
+  padding: 20px;
+  padding-left: 80px;
+}
+
+/* CETIFICATE */
+#certificate .container {
+  padding: 30px 0 0 0;
+}
+#certificate h4 {
+  font-size: 10px;
+  font-weight: 600;
+}
+#certificate p {
+  margin-bottom: 0;
+}
+
+.container-certificate,
+.title-align {
+  display: grid;
+  grid-template-columns: 39% 39%;
+  justify-content: center;
+}
+
+.certificate-content {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  padding: 30px 0;
+}
+
+.row-top {
+  border-bottom: 1px solid #d6c08d;
+}
+
+.detail {
+  max-width: 95%;
+  font-size: 10px;
+  padding: 5px 15px;
+  line-height: 1.5;
+}
+
+/* PROJECT */
+#project .container {
+  padding: 30px 0;
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.first-row,
+.sencond-row {
+  padding: 10px 5px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.sencond-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.table-height {
+  border: 1px solid #f7f7f7;
+  min-height: 210px;
+}
+
+.table--1,
+.table--2,
+.table--3 {
+  display: grid;
+  grid-template-columns: 25% 70%;
+  padding: 5px;
+  gap: 4%;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.table--3 {
+  border-bottom: none;
+  padding-top: 7px;
+}
+
+.full {
+  background-color: #2a97eb;
+  color: white;
+  border: 1px solid #2a97eb;
+  border-radius: 15%;
+  text-align: center;
+  padding: 1px 5px;
+}
+
+/* FOOTER */
+#footer .container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+#footer ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#footer li {
+  padding: 0 20px;
+}
+
+.icon {
+  background-color: #2a97eb;
+  color: white;
+  border: 1px solid #2a97eb;
+  border-radius: 50%;
+  text-align: center;
+  padding: 2px;
+  margin: 10px;
+}
+
+/* NAV */
+.avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 7px solid whitesmoke;
+  position: relative;
+  top: 10px;
+}
+.change {
+  position: absolute;
+}
